@@ -2,23 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package proyectoau;
+package Model;
 
 /**
  *
  * @author juanp
  */
-public class Administrador {
+public class Administrador extends Persona{
+    private int id;
 
-  String nombre;
-  String apellido;
-  int id;
-  int telefono;
-  String genero;
-  String direccion;
-  String correoElectronico;
-  double salario;
-  String nivelExperiencia;
-  String departamento;
+    public Administrador(int id, String nombre, String apellidos, int edad, String nacionalidad, int fechaDeExcursion) {
+        super(nombre, apellidos, edad, nacionalidad, fechaDeExcursion);
+        this.id = id;
+    }
+    
+    
+    
+
     
 }
