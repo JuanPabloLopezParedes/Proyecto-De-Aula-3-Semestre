@@ -2,22 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package proyectoau;
+package Model;
 
 /**
  *
  * @author juanp
  */
-public class Vigilantes {
+public class Vigilantes extends Personas{
+
+    public Vigilantes(String nombre, String apellidos, int edad, String nacionalidad, int horaDeEntrada, int horaDeSalida) {
+        super(nombre, apellidos, edad, nacionalidad, horaDeEntrada, horaDeSalida);
+    }
     
-    int id;
-    String nombre;
-    String apellidos;
-    String genero;
-    String horarioDeTrabajo;
-    String direccion;
-    int edad;
-    int numeroTelefonico;
-    String correoElectronico;
     
 }
