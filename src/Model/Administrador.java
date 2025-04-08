@@ -10,15 +10,15 @@ package Model;
  */
 public class Administrador {
 
-  String nombre;
-  String apellido;
-  int id;
-  int telefono;
-  String genero;
-  String direccion;
-  String correoElectronico;
-  double salario;
-  String nivelExperiencia;
-  String departamento;
+  private String nombre;
+  private String apellido;
+  private int id;
+  private int telefono;
+  private String genero;
+  private String direccion;
+  private String correoElectronico;
+  private double salario;
+  private String nivelExperiencia;
+  private String departamento;
     
 }
