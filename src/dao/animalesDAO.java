@@ -28,7 +28,7 @@ public class animalesDAO {
     
     public List<Animales> cargarRegistros() {
         try (Reader read = new FileReader(ARCHIVO_JSON)) {
-            Type tipoLista = new TypeToken<ArrayList<Animales>>(){}.getType();
+            Type Lista = new TypeToken<ArrayList<Animales>>(){}.getType();
             List<Animales> animales = gson.fromJson(new FileReader("animales.json"), new TypeToken<List<Animales>>(){}.getType());
             return animales != null ? animales : new ArrayList<>();
         } catch (IOException e) {

@@ -10,25 +10,24 @@ package Model;
  */
 public class Animales {
     
-  private String nombre;
-  private int ID;
-  private int edad;
-  private String peso;
-  private String cuidadorAsignado;
-  private String estado;
-  private String tipo;
-  private String habitat;
+   private String nombre;
+   private String ID;
+   private String edad;
+   private String peso;
+   private String tipo;
+   private String estado;
+   private String habitat;
+   private String cuidadorAsignado;
 
-    public Animales(String nombre, String peso, String cuidadorAsignado, String estado, String tipo, String habitat, String tipo1, String habitat1) {
+    public Animales(String nombre, String ID, String edad, String peso, String tipo, String estado, String habitat, String cuidadorAsignado) {
         this.nombre = nombre;
         this.ID = ID;
         this.edad = edad;
         this.peso = peso;
-        this.cuidadorAsignado = cuidadorAsignado;
-        this.estado = estado;
         this.tipo = tipo;
+        this.estado = estado;
         this.habitat = habitat;
-        
+        this.cuidadorAsignado = cuidadorAsignado;
     }
 
     public String getNombre() {
@@ -39,12 +38,20 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public int getID() {
+    public String getID() {
         return ID;
     }
 
-    public void setID(int ID) {
+    public void setID(String ID) {
         this.ID = ID;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
     }
 
     public String getPeso() {
@@ -55,12 +62,12 @@ public class Animales {
         this.peso = peso;
     }
 
-    public String getCuidadorAsignado() {
-        return cuidadorAsignado;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setCuidadorAsignado(String cuidadorAsignado) {
-        this.cuidadorAsignado = cuidadorAsignado;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getEstado() {
@@ -71,14 +78,6 @@ public class Animales {
         this.estado = estado;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public String getHabitat() {
         return habitat;
     }
@@ -87,6 +86,18 @@ public class Animales {
         this.habitat = habitat;
     }
 
+    public String getCuidadorAsignado() {
+        return cuidadorAsignado;
+    }
+
+    public void setCuidadorAsignado(String cuidadorAsignado) {
+        this.cuidadorAsignado = cuidadorAsignado;
+    }
+   
+   
+
+
   
-    
+   
+   
 }

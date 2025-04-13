@@ -9,43 +9,56 @@ import java.util.Date;
  * @author juanp
  */
 
-public class Vigilantes extends Persona{
+public class Vigilantes {
     
-    private Date horario;
-    private Zona zona;
-    private String salario;
+    private String nombre;
+    private String apellido;
+    private String edad;
+    private String numDocumento;
     private String cargo;
+    private String horario;
+    private String zonaAsignada;
 
-    public Vigilantes(Date horario, Zona zona, String salario, String nombre, String apellidos, int edad, String nacionalidad, int fechaDeExcursion) {
-        super(nombre, apellidos, edad, nacionalidad, fechaDeExcursion);
-        this.horario = horario;
-        this.zona = zona;
-        this.salario = salario;
+    public Vigilantes(String nombre, String apellido, String edad, String numDocumento, String cargo, String horario, String zonaAsignada) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.numDocumento = numDocumento;
         this.cargo = cargo;
-    }
-
-    public Date getHorario() {
-        return horario;
-    }
-
-    public void setHorario(Date horario) {
         this.horario = horario;
+        this.zonaAsignada = zonaAsignada;
     }
 
-    public Zona getZona() {
-        return zona;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setZona(Zona zona) {
-        this.zona = zona;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getSalario() {
-        return salario;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setSalario(String salario) {
-        this.salario = salario;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+    public String getNumDocumento() {
+        return numDocumento;
+    }
+
+    public void setNumDocumento(String numDocumento) {
+        this.numDocumento = numDocumento;
     }
 
     public String getCargo() {
@@ -55,6 +68,23 @@ public class Vigilantes extends Persona{
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public String getZonaAsignada() {
+        return zonaAsignada;
+    }
+
+    public void setZonaAsignada(String zonaAsignada) {
+        this.zonaAsignada = zonaAsignada;
+    }
+    
     
     
 }

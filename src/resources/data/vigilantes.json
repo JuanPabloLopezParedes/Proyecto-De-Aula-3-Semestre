@@ -1,0 +1,11 @@
+[
+  {
+    "nombre": "Jose Angel",
+    "apellido": "Cassiani Fresas",
+    "edad": "15",
+    "numDocumento": "23456789",
+    "cargo": "Guardia de entrada",
+    "horario": "Nocturno",
+    "zonaAsignada": "Zona exterior"
+  }
+]
