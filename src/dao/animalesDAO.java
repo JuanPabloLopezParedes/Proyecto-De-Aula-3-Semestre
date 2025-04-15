@@ -16,6 +16,7 @@ import java.lang.reflect.Type;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -29,7 +30,7 @@ public class animalesDAO {
     public List<Animales> cargarRegistros() {
         try (Reader read = new FileReader(ARCHIVO_JSON)) {
             Type Lista = new TypeToken<ArrayList<Animales>>(){}.getType();
-            List<Animales> animales = gson.fromJson(new FileReader("animales.json"), new TypeToken<List<Animales>>(){}.getType());
+            List<Animales> animales = gson.fromJson(read, Lista);
             return animales != null ? animales : new ArrayList<>();
         } catch (IOException e) {
             System.err.println("ERROR. No se puede cargar: " + e.getMessage());
@@ -48,6 +49,26 @@ public class animalesDAO {
             gson.toJson(animales, writer);
         } catch (IOException e) {
             System.err.println("Error al guardar animales: " + e.getMessage());
+        }
+    }
+    
+    public void eliminarConId(String Id){
+        List<Animales> animales = cargarRegistros();
+        int idBuscado;
+        
+        try {
+            idBuscado = Integer.parseInt(Id);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "El ID debe ser un numero valido", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+         boolean eliminacion = animales.removeIf(animal -> animal.getID() == idBuscado);
+
+        if (eliminacion) {
+            guardarTodos(animales);
+            JOptionPane.showMessageDialog(null, "Eliminacion exitosa");
+        } else {
+            JOptionPane.showMessageDialog(null, "Error al eliminar. No se encontro el ID" + Id);
         }
     }
 }

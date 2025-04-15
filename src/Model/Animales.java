@@ -11,7 +11,7 @@ package Model;
 public class Animales {
     
    private String nombre;
-   private String ID;
+   private int ID;
    private String edad;
    private String peso;
    private String tipo;
@@ -19,7 +19,7 @@ public class Animales {
    private String habitat;
    private String cuidadorAsignado;
 
-    public Animales(String nombre, String ID, String edad, String peso, String tipo, String estado, String habitat, String cuidadorAsignado) {
+    public Animales(String nombre, int ID, String edad, String peso, String tipo, String estado, String habitat, String cuidadorAsignado) {
         this.nombre = nombre;
         this.ID = ID;
         this.edad = edad;
@@ -38,11 +38,11 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
@@ -93,11 +93,10 @@ public class Animales {
     public void setCuidadorAsignado(String cuidadorAsignado) {
         this.cuidadorAsignado = cuidadorAsignado;
     }
-   
-   
-
 
   
    
+   
+
    
 }

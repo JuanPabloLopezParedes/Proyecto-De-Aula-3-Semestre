@@ -1,12 +1,42 @@
 [
   {
-    "nombre": "Ballena",
-    "ID": "12345",
-    "edad": "43",
-    "peso": "200kg",
+    "nombre": "Manta Negra",
+    "ID": 124567,
+    "edad": "23",
+    "peso": "40kg",
+    "tipo": "Pez",
+    "estado": "En recuperacion",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "David Kane"
+  },
+  {
+    "nombre": "Medusa",
+    "ID": 984372,
+    "edad": "56",
+    "peso": "30kg",
+    "tipo": "Molusco",
+    "estado": "En tratamiento",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "Micke Moreno"
+  },
+  {
+    "nombre": "Delfin Blanco",
+    "ID": 91872734,
+    "edad": "35",
+    "peso": "50kg",
     "tipo": "Mamifero",
     "estado": "Sano",
-    "habitat": "Tanque",
-    "cuidadorAsignado": "Jose Lopez"
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Juan Pablo Lopez"
+  },
+  {
+    "nombre": "Tortuga",
+    "ID": 590586775,
+    "edad": "60",
+    "peso": "30kg",
+    "tipo": "Mamifero",
+    "estado": "En recuperacion",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "John Carlos Perez"
   }
 ]
