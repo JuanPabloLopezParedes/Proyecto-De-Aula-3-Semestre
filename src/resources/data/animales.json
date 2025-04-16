@@ -1,15 +1,5 @@
 [
   {
-    "nombre": "Manta Negra",
-    "ID": 124567,
-    "edad": "23",
-    "peso": "40kg",
-    "tipo": "Pez",
-    "estado": "En recuperacion",
-    "habitat": "Area de rehabilitacion",
-    "cuidadorAsignado": "David Kane"
-  },
-  {
     "nombre": "Medusa",
     "ID": 984372,
     "edad": "56",
@@ -38,5 +28,15 @@
     "estado": "En recuperacion",
     "habitat": "Area de rehabilitacion",
     "cuidadorAsignado": "John Carlos Perez"
+  },
+  {
+    "nombre": "Cangrejo",
+    "ID": 1096542936,
+    "edad": "60",
+    "peso": "10kg",
+    "tipo": "Crustaceo",
+    "estado": "En recuperacion",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "Jhon Arrieta"
   }
 ]

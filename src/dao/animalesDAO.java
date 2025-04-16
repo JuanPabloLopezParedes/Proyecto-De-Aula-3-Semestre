@@ -59,7 +59,7 @@ public class animalesDAO {
         try {
             idBuscado = Integer.parseInt(Id);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "El ID debe ser un numero valido", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "ID no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
          boolean eliminacion = animales.removeIf(animal -> animal.getID() == idBuscado);
