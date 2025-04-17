@@ -1,15 +1,5 @@
 [
   {
-    "nombre": "Medusa",
-    "ID": 984372,
-    "edad": "56",
-    "peso": "30kg",
-    "tipo": "Molusco",
-    "estado": "En tratamiento",
-    "habitat": "Area de rehabilitacion",
-    "cuidadorAsignado": "Micke Moreno"
-  },
-  {
     "nombre": "Delfin Blanco",
     "ID": 91872734,
     "edad": "35",
@@ -20,16 +10,6 @@
     "cuidadorAsignado": "Juan Pablo Lopez"
   },
   {
-    "nombre": "Tortuga",
-    "ID": 590586775,
-    "edad": "60",
-    "peso": "30kg",
-    "tipo": "Mamifero",
-    "estado": "En recuperacion",
-    "habitat": "Area de rehabilitacion",
-    "cuidadorAsignado": "John Carlos Perez"
-  },
-  {
     "nombre": "Cangrejo",
     "ID": 1096542936,
     "edad": "60",
@@ -38,5 +18,35 @@
     "estado": "En recuperacion",
     "habitat": "Area de rehabilitacion",
     "cuidadorAsignado": "Jhon Arrieta"
+  },
+  {
+    "nombre": "Pez Globo",
+    "ID": 1234567890,
+    "edad": "37",
+    "peso": "14kg",
+    "tipo": "Pez",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Carlos Marrugo"
+  },
+  {
+    "nombre": "Pulpo",
+    "ID": 1044876298,
+    "edad": "70",
+    "peso": "49kg",
+    "tipo": "Molusco",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Angel Reyes"
+  },
+  {
+    "nombre": "Mantarraya",
+    "ID": 1033456789,
+    "edad": "50",
+    "peso": "1600kg",
+    "tipo": "Pez",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Orm Marius Reyes"
   }
 ]

@@ -52,7 +52,7 @@ public class animalesDAO {
         }
     }
     
-    public void eliminarConId(String Id){
+    public boolean eliminarConId(String Id){
         List<Animales> animales = cargarRegistros();
         int idBuscado;
         
@@ -60,15 +60,14 @@ public class animalesDAO {
             idBuscado = Integer.parseInt(Id);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "ID no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
+            return false;
         }
-         boolean eliminacion = animales.removeIf(animal -> animal.getID() == idBuscado);
-
+        boolean eliminacion = animales.removeIf(animal -> animal.getID() == idBuscado);
+         
         if (eliminacion) {
             guardarTodos(animales);
-            JOptionPane.showMessageDialog(null, "Eliminacion exitosa");
-        } else {
-            JOptionPane.showMessageDialog(null, "Error al eliminar. No se encontro el ID" + Id);
         }
+        
+        return eliminacion;
     }
 }
