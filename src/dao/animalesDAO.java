@@ -38,6 +38,7 @@ public class animalesDAO {
         }
     }
     
+    //METODO DE GUARDADO
     public void guardarAnimal(Animales animal) {
         List<Animales> animales = cargarRegistros();
         animales.add(animal);
@@ -52,6 +53,7 @@ public class animalesDAO {
         }
     }
     
+    //METODO DE ELIMINACION
     public boolean eliminarConId(String Id){
         List<Animales> animales = cargarRegistros();
         int idBuscado;
@@ -69,5 +71,17 @@ public class animalesDAO {
         }
         
         return eliminacion;
+    }
+    
+    //METODO DE BUSQUEDA
+    public Animales buscarConId(int id){
+        List<Animales> animales = cargarRegistros();
+        
+        for(Animales animal : animales ){
+            if (animal.getID() == id) {
+                return animal;
+            }
+        }
+        return null;
     }
 }

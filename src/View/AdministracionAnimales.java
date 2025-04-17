@@ -102,6 +102,47 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         }
     }
     
+    private void buscarAnimales(){
+        String idBuscado = txtBusqueda.getText().trim();
+        
+        if (idBuscado.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Ingrese un ID para buscar registros", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        int idIngresado;
+        
+        try {
+            idIngresado = Integer.parseInt(idBuscado);
+            
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Solo se permiten numeros", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        Animales animal = dao.buscarConId(idIngresado);
+        if (animal == null) {
+            JOptionPane.showMessageDialog(null, "No se encontraron resultados");
+        } else {
+            mostrarBusquedaEnTabla(animal);
+        }
+    }
+    
+    private void mostrarBusquedaEnTabla(Animales animal) {
+    modelo.setRowCount(0);
+    modelo.addRow(new Object[]{
+        animal.getNombre(),
+        animal.getID(),
+        animal.getEdad(),
+        animal.getPeso(),
+        animal.getTipo(),
+        animal.getEstado(),
+        animal.getHabitat(),
+        animal.getCuidadorAsignado()
+    });
+    tableAnimales.setModel(modelo); 
+}
+    
     
     
     
@@ -149,6 +190,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        txtBusqueda = new javax.swing.JTextField();
 
         jLabel1.setText("jLabel1");
 
@@ -182,6 +224,11 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         btnBuscar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BUSCAR.png"))); // NOI18N
         btnBuscar.setText("BUSCAR");
+        btnBuscar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuscarMouseClicked(evt);
+            }
+        });
 
         btnEliminar.setBackground(new java.awt.Color(51, 255, 255));
         btnEliminar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
@@ -251,6 +298,12 @@ public class AdministracionAnimales extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setText("ID");
+
+        txtID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIDActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("EDAD");
@@ -330,19 +383,25 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/AÑADIR.png"))); // NOI18N
         jLabel2.setText("Guardar/Modificar/Buscar/Eliminar Animales");
 
+        txtBusqueda.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel2)
-                .addGap(0, 1489, Short.MAX_VALUE))
+                .addGap(474, 474, 474)
+                .addComponent(txtBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 754, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
@@ -415,11 +474,11 @@ public class AdministracionAnimales extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(45, 45, 45)
+                        .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -485,6 +544,15 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         eliminarAnimales();
     }//GEN-LAST:event_btnEliminarMouseClicked
 
+    private void btnBuscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarMouseClicked
+        // TODO add your handling code here:
+        buscarAnimales();
+    }//GEN-LAST:event_btnBuscarMouseClicked
+
+    private void txtIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIDActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -548,6 +616,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableAnimales;
+    private javax.swing.JTextField txtBusqueda;
     private javax.swing.JTextField txtCuidador;
     private javax.swing.JTextField txtEdad;
     private javax.swing.JTextField txtID;
