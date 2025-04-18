@@ -48,5 +48,15 @@
     "estado": "Sano",
     "habitat": "Laguna",
     "cuidadorAsignado": "Orm Marius Reyes"
+  },
+  {
+    "nombre": "Tiburon Blanco",
+    "ID": 1045678204,
+    "edad": "50",
+    "peso": "3600kg",
+    "tipo": "Mamifero",
+    "estado": "Sano",
+    "habitat": "Tanque",
+    "cuidadorAsignado": "Jose Peralta"
   }
 ]
