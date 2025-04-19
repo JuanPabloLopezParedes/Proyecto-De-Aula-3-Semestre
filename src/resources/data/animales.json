@@ -58,5 +58,15 @@
     "estado": "Sano",
     "habitat": "Tanque",
     "cuidadorAsignado": "Jose Peralta"
+  },
+  {
+    "nombre": "Pez Espada",
+    "ID": 10567982,
+    "edad": "60",
+    "peso": "500kg",
+    "tipo": "Pez",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Juan Manuel Ortiz"
   }
 ]
