@@ -68,5 +68,35 @@
     "estado": "Sano",
     "habitat": "Laguna",
     "cuidadorAsignado": "Juan Manuel Ortiz"
+  },
+  {
+    "nombre": "Foca",
+    "ID": 1043651784,
+    "edad": "56",
+    "peso": "2400kg",
+    "tipo": "Mamifero",
+    "estado": "En tratamiento",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "Manuel Herrera"
+  },
+  {
+    "nombre": "Langosta",
+    "ID": 1056897654,
+    "edad": "56",
+    "peso": "700kg",
+    "tipo": "Crustaceo",
+    "estado": "Sano",
+    "habitat": "Tanque",
+    "cuidadorAsignado": "Victor Reyes"
+  },
+  {
+    "nombre": "Estrella de mar",
+    "ID": 1033465109,
+    "edad": "67",
+    "peso": "50kg",
+    "tipo": "Pez",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Erik Fernandez"
   }
 ]
