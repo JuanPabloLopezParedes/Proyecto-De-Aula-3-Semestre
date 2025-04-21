@@ -17,7 +17,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author juanp
@@ -38,7 +37,7 @@ public class animalesDAO {
         }
     }
     
-    //METODO DE GUARDADO ANIMALES
+    //METODO GUARDADO DE ANIMALES
     public void guardarAnimal(Animales animal) {
         List<Animales> animales = cargarRegistros();
         animales.add(animal);
@@ -53,7 +52,7 @@ public class animalesDAO {
         }
     }
     
-    //METODO DE ELIMINACION DE ANIMALES
+    //METODO ELIMINACION DE ANIMALES
     public boolean eliminarConId(String Id){
         List<Animales> animales = cargarRegistros();
         int idBuscado;
@@ -73,7 +72,7 @@ public class animalesDAO {
         return eliminacion;
     }
     
-    //METODO DE BUSQUEDA DE ANIMALES
+    //METODO BUSQUEDA DE ANIMALES
     public Animales buscarConId(int id){
         List<Animales> animales = cargarRegistros();
         

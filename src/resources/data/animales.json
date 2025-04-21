@@ -98,5 +98,25 @@
     "estado": "Sano",
     "habitat": "Laguna",
     "cuidadorAsignado": "Erik Fernandez"
+  },
+  {
+    "nombre": "Orca",
+    "ID": 1044567320,
+    "edad": "78",
+    "peso": "5500kg",
+    "tipo": "Mamifero",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Luka Modrik"
+  },
+  {
+    "nombre": "Medusa",
+    "ID": 1044678201,
+    "edad": "50",
+    "peso": "204kg",
+    "tipo": "Cnidario",
+    "estado": "Sano",
+    "habitat": "Laguna",
+    "cuidadorAsignado": "Juan Pablo Lopez"
   }
 ]
