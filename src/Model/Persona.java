@@ -15,8 +15,7 @@ public class Persona {
     private int edad;
     private String nacionalidad;
 
-
-    public Persona(String nombre, String apellidos, int edad, String nacionalidad, int fechaDeExcursion) {
+    public Persona(String nombre, String apellidos, int edad, String nacionalidad) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -55,4 +54,6 @@ public class Persona {
         this.nacionalidad = nacionalidad;
     }
 
+
+    
 }

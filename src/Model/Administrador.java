@@ -8,16 +8,5 @@ package Model;
  *
  * @author juanp
  */
-public class Administrador extends Persona{
-    private int id;
-
-    public Administrador(int id, String nombre, String apellidos, int edad, String nacionalidad, int fechaDeExcursion) {
-        super(nombre, apellidos, edad, nacionalidad, fechaDeExcursion);
-        this.id = id;
-    }
-    
-    
-    
-
-    
+public class Administrador{ 
 }

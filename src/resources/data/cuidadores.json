@@ -1,0 +1,32 @@
+[
+  {
+    "area": "Pediatría",
+    "especialidad": "Enfermería",
+    "direccion": "Calle 123",
+    "cedula": 123456,
+    "nombre": "Ana",
+    "apellidos": "Gómez",
+    "edad": 35,
+    "nacionalidad": "Colombiana"
+  },
+  {
+    "area": "Centro de alimentacion",
+    "especialidad": "Educacion ambiental ",
+    "direccion": "Cuatro Vientos",
+    "cedula": 10987654,
+    "nombre": "Juan Manuel",
+    "apellidos": "Marrugo Perez",
+    "edad": 23,
+    "nacionalidad": "Ingles"
+  },
+  {
+    "area": "Habitats",
+    "especialidad": "Crianza y reproduccion",
+    "direccion": "Torices tv 45A",
+    "cedula": 1045678902,
+    "nombre": "John Carlos",
+    "apellidos": "Arrieta Valladares",
+    "edad": 60,
+    "nacionalidad": "Colombiano"
+  }
+]

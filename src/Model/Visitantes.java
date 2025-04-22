@@ -15,14 +15,16 @@ public class Visitantes extends Persona{
     private int horaDeSalida;
     private int numeroDeAcompañantes;
     private String fechaExcursion;
+    private int cedula;
 
-    public Visitantes(String metodoPago, int horaDeEntrada, int horaDeSalida, int numeroDeAcompañantes, String fechaExcursion, String nombre, String apellidos, int edad, String nacionalidad, int fechaDeExcursion) {
-        super(nombre, apellidos, edad, nacionalidad, fechaDeExcursion);
+    public Visitantes(String metodoPago, int horaDeEntrada, int horaDeSalida, int numeroDeAcompañantes, String fechaExcursion, int cedula, String nombre, String apellidos, int edad, String nacionalidad) {
+        super(nombre, apellidos, edad, nacionalidad);
         this.metodoPago = metodoPago;
         this.horaDeEntrada = horaDeEntrada;
         this.horaDeSalida = horaDeSalida;
         this.numeroDeAcompañantes = numeroDeAcompañantes;
         this.fechaExcursion = fechaExcursion;
+        this.cedula = cedula;
     }
 
     public String getMetodoPago() {
@@ -65,13 +67,14 @@ public class Visitantes extends Persona{
         this.fechaExcursion = fechaExcursion;
     }
 
-    
-    
+    public int getCedula() {
+        return cedula;
+    }
 
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
     
     
-
-    
-    
-    
+     
 }
