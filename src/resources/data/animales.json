@@ -118,5 +118,15 @@
     "estado": "Sano",
     "habitat": "Laguna",
     "cuidadorAsignado": "Juan Pablo Lopez"
+  },
+  {
+    "nombre": "Pinguino",
+    "ID": 1044651302,
+    "edad": "34",
+    "peso": "100kg",
+    "tipo": "Aves",
+    "estado": "Sano",
+    "habitat": "Area de rehabilitacion",
+    "cuidadorAsignado": "Thomas Perez"
   }
 ]

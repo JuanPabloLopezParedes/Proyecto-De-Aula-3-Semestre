@@ -1,23 +1,13 @@
 [
   {
     "area": "Pediatría",
-    "especialidad": "Enfermería",
+    "especialidad": "Zona de rehabilitacion",
     "direccion": "Calle 123",
     "cedula": 123456,
     "nombre": "Ana",
     "apellidos": "Gómez",
     "edad": 35,
     "nacionalidad": "Colombiana"
-  },
-  {
-    "area": "Centro de alimentacion",
-    "especialidad": "Educacion ambiental ",
-    "direccion": "Cuatro Vientos",
-    "cedula": 10987654,
-    "nombre": "Juan Manuel",
-    "apellidos": "Marrugo Perez",
-    "edad": 23,
-    "nacionalidad": "Ingles"
   },
   {
     "area": "Habitats",

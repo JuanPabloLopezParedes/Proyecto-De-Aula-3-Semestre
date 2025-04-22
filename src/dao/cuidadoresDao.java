@@ -54,5 +54,39 @@ public class cuidadoresDao {
         }
     }
     
+    public boolean eliminarConCC(String cedula){
+        List<Cuidadores> cuidadores = cargarRegistros();
+        int ccBuscado;
+        
+        try {
+            ccBuscado = Integer.parseInt(cedula);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "ID no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+        boolean eliminacion = cuidadores.removeIf(cuidador -> cuidador.getCedula() == ccBuscado);
+         
+        if (eliminacion) {
+            guardarTodos(cuidadores);
+        }
+        
+        return eliminacion;
+    }
+    
+     public Cuidadores buscarConCC(int cedula){
+        List<Cuidadores> cuidadores = cargarRegistros();
+        
+        for(Cuidadores cuidador : cuidadores){
+            if (cuidador.getCedula()== cedula) {
+                return cuidador;
+            }
+        }
+        return null;
+    }
+    
+    
+    
+    
+    
     
 }

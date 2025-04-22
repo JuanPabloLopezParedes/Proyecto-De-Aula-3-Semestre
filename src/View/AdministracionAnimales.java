@@ -77,7 +77,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         
     }
     
-    
+    //MOSTRAMOS LOS REGISTROS EN TABLA
     private void cargarTablaAnimales(){
         modelo.setColumnIdentifiers(new Object[]{"Nombre","ID","Edad","Peso","Tipo","Estado","Habitat","CuidadorAsignado"});
         
@@ -99,7 +99,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         tableAnimales.setModel(modelo);
     }
     
-    //DESPUES DE GUARDAR UN ANIMAL
+    //DESPUES DE GUARDAR UN ANIMAL LIMPIAMOS LOS CAMPOS
     private void limpiarCampos(){
         txtNombre.setText("");
         txtID.setText("");
@@ -150,7 +150,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
             mostrarBusquedaEnTabla(animal);
         }
     }    
-    //MOSTRAMOS EL ID BUSCADO
+    //MOSTRAMOS EN TABLA SOLO EL ID BUSCADO
     private void mostrarBusquedaEnTabla(Animales animal) {
     modelo.setRowCount(0);
     modelo.addRow(new Object[]{
@@ -367,7 +367,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
         jLabel10.setText("TIPO");
 
         comboTipo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        comboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Mamifero", "Pez", "Molusco", "Crustaceo", "Cefalopodo", "Reptil", "Equinodermo", "Cnidario" }));
+        comboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Mamifero", "Pez", "Molusco", "Crustaceo", "Aves", "Cefalopodo", "Reptil", "Equinodermo", "Cnidario" }));
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ANIMALES REGISTRADOS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI Black", 1, 18), new java.awt.Color(0, 204, 204))); // NOI18N
 
@@ -622,8 +622,7 @@ public class AdministracionAnimales extends javax.swing.JFrame {
     private void txtBusquedaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBusquedaKeyReleased
         // TODO add your handling code here:
         if (txtBusqueda.getText().trim().isEmpty()){
-            cargarTablaAnimales();
-            
+            cargarTablaAnimales();   
         }
     }//GEN-LAST:event_txtBusquedaKeyReleased
 

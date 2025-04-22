@@ -17,10 +17,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author juanp
  */
+
 public class animalesDAO {
     private static final String ARCHIVO_JSON = "C:\\Users\\juanp\\OneDrive\\Documentos\\NetBeansProjects\\ProyectoAula3Semestre\\src\\resources\\data\\animales.json";
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -37,6 +39,7 @@ public class animalesDAO {
         }
     }
     
+    
     //METODO GUARDADO DE ANIMALES
     public void guardarAnimal(Animales animal) {
         List<Animales> animales = cargarRegistros();
@@ -51,6 +54,7 @@ public class animalesDAO {
             System.err.println("Error al guardar animales: " + e.getMessage());
         }
     }
+    
     
     //METODO ELIMINACION DE ANIMALES
     public boolean eliminarConId(String Id){
