@@ -128,5 +128,15 @@
     "estado": "Sano",
     "habitat": "Area de rehabilitacion",
     "cuidadorAsignado": "Thomas Perez"
+  },
+  {
+    "nombre": "Pez Sierra",
+    "ID": 1044567802,
+    "edad": "34",
+    "peso": "70kg",
+    "tipo": "Pez",
+    "estado": "Sano",
+    "habitat": "Tanque",
+    "cuidadorAsignado": "Haider Mejia"
   }
 ]

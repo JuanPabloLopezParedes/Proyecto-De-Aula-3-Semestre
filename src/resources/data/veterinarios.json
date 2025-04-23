@@ -1,0 +1,20 @@
+[
+  {
+    "direccion": "Cuatro Vientos",
+    "horario": "Diurno",
+    "cedula": 1044376541,
+    "nombre": "Juan Pablo",
+    "apellidos": "Lopez Paredes",
+    "edad": 23,
+    "nacionalidad": "Colombiano"
+  },
+  {
+    "direccion": "Bocagrande tv 27A",
+    "horario": "Nocturno",
+    "cedula": 105643204,
+    "nombre": "Jhon Carlos",
+    "apellidos": "Arrieta Peralta",
+    "edad": 67,
+    "nacionalidad": "Mexicano"
+  }
+]
